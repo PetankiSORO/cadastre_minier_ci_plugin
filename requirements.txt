@@ -1,0 +1,7 @@
+geopandas>=0.14
+pandas>=2.0
+pyogrio>=0.7
+
+google-auth>=2.25
+google-auth-oauthlib>=1.2
+google-api-python-client>=2.110
