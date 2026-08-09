@@ -10,7 +10,7 @@ permissions:
   issues: write
 
 jobs:
-  update cadastre minier ci:
+  update-cadastre-minier-ci:
     runs-on: ubuntu-latest
     
     steps:
