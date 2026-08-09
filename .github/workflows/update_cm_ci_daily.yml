@@ -27,7 +27,7 @@ jobs:
             python -m pip install --upgrade pip
             pip install -r requirements.txt
     
-        - name: Lancer le pipeline
+        - name: "Lancer le pipeline"
           env:
             GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
             GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
@@ -36,7 +36,7 @@ jobs:
             LOG_LEVEL: INFO
           run: python main.py
     
-        - name: Commit et push du fichier de sortie
+        - name: "Commit et push du fichier de sortie"
           run: |
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
