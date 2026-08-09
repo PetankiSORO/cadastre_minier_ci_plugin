@@ -72,7 +72,7 @@ def main() -> None:
             process_and_save,
             source_files[cfg.input_files["admin"]],
             source_files[cfg.input_files["cadastre"]],
-            cfg.output_file,
+            output_file,
         )
         
     except Exception:
