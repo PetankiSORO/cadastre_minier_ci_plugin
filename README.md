@@ -1,1 +1,1 @@
-# CadastreMinierCI_plugin
+## cadastre_minier_ci_plugin
