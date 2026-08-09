@@ -6,7 +6,7 @@ import sys
 import time
 
 import src.config as cfg
-import src.gdrive
+import src.gdrive as gdrive
 import src.processing as prs
 from src.logger import logger
 
