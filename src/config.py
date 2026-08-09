@@ -10,7 +10,7 @@ data_dir = base_dir / "data"
 output_file = data_dir / "cadastre_minier_ci.gpkg"
 
 # --- Google Drive / OAuth ---
-scopes = ["https://www.googleapis.com/auth/drive.readonly"]
+scopes = ["https://www.googleapis.com/auth/drive.file"]
 
 drive_folder_id = os.environ.get("DRIVE_FOLDER_ID")
 if not drive_folder_id:
