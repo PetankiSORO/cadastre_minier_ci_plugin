@@ -4,11 +4,16 @@ charge les couches, et sauvegarde le résultat consolidé.
 """
 import sys
 import time
+from pathlib import Path
 
 import src.config as cfg
 import src.gdrive as gdrive
 import src.processing as prs
 from src.logger import logger
+
+base_dir = Path(__file__).parent
+data_dir = base_dir / "data"
+output_file = data_dir / "cadastre_minier_ci.gpkg"
 
 def fetch_source_files(folder_id: str, files: dict[str, str]) -> dict[str, bytes]:
     """Télécharge les derniers fichiers .gpkg depuis Google Drive."""
