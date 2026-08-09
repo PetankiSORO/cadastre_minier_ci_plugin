@@ -6,8 +6,6 @@ from pathlib import Path
 
 # --- Répertoires ---
 base_dir = Path(__file__).parent
-data_dir = base_dir / "data"
-output_file = data_dir / "cadastre_minier_ci.gpkg"
 
 # --- Google Drive / OAuth ---
 scopes = ["https://www.googleapis.com/auth/drive.file"]
