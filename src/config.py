@@ -8,7 +8,7 @@ from pathlib import Path
 base_dir = Path(__file__).parent
 
 # --- Google Drive / OAuth ---
-scopes = ["https://www.googleapis.com/auth/drive.file"]
+scopes = ["https://www.googleapis.com/auth/drive"]
 
 drive_folder_id = os.environ.get("DRIVE_FOLDER_ID")
 if not drive_folder_id:
